@@ -18,3 +18,12 @@ def coin_flip():
         print('Выпала РЕШКА')
     else:
         print('Выпал ОРЕЛ')
+
+def guess_number():
+    secret = random.randint(1, 3)
+    print("Угадай число от 1 до 3")
+    guess = int(input('Твой ответ: '))
+    if guess == secret:
+        print("Круто! Ты угадал.")
+    else:
+        print(f'Не угадал. Было число {secret}')
