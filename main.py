@@ -31,7 +31,27 @@ def guess_number():
 tasks = []
 
 def add_tasks():
-    task = input('Что нужно сделать?')
+    task = input('Что нужно сделать? ')
     tasks.append(task)
     print(f'Задача добавлена: {task}')
-    print('Текущие задачи:', tasks)
+
+def menu():
+    while True:
+        print('\n=== Меню проекта ===')
+        print('1. Приветствие')
+        print('2. Цитата дня')
+        print('3. Орел/Решка')
+        print('4. Угадай число')
+        print('5. Добавить задачу')
+        print('6. Выход')
+        choice = input('Выбери номер: ')
+        if choice == '1': greeting()
+        elif choice == '2': motivation_quote()
+        elif choice == '3': coin_flip()
+        elif choice == '4': guess_number()
+        elif choice == '5': add_tasks()
+        elif choice == '6':
+            print('Пока, команда!')
+            break
+
+menu()
