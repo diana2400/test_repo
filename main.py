@@ -27,3 +27,11 @@ def guess_number():
         print("Круто! Ты угадал.")
     else:
         print(f'Не угадал. Было число {secret}')
+
+tasks = []
+
+def add_tasks():
+    task = input('Что нужно сделать?')
+    tasks.append(task)
+    print(f'Задача добавлена: {task}')
+    print('Текущие задачи:', tasks)
